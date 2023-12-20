@@ -2,6 +2,7 @@
 node_modules
 .shadow-cljs
 .clj-kondo/.cache
+.lsp/.cache
 
 example/poc/node_modules
 
