@@ -1,0 +1,26 @@
+{:paths ["src" "resources"]
+ :deps {}
+ :aliases
+ {;; frontend
+  :cljs {:extra-paths ["front"]
+         :extra-deps {cider/cider-nrepl {:mvn/version "0.28.6"}
+                      thheller/shadow-cljs {:mvn/version "2.20.10"}}}
+
+  :dev {:extra-paths ["test"]
+        :extra-deps  {lambdaisland/kaocha {:mvn/version "1.70.1086"}
+                      lambdaisland/kaocha-cloverage {:mvn/version "1.0.75"}
+                      nubank/matcher-combinators {:mvn/version "3.5.1"}}}
+  ;; clj -M:test
+  :test {:extra-paths ["test"]
+         :extra-deps  {lambdaisland/kaocha {:mvn/version "1.70.1086"}
+                       lambdaisland/kaocha-cloverage {:mvn/version "1.0.75"}
+                       nubank/matcher-combinators {:mvn/version "3.5.1"}}
+         :main-opts   ["-m" "kaocha.runner"]}
+
+  ;; clj -M:clojure-lsp
+  :clojure-lsp {:replace-deps {com.github.clojure-lsp/clojure-lsp-standalone {:mvn/version "2022.09.01-15.27.31"}}
+                :main-opts ["-m" "clojure-lsp.main"]}
+
+  ;; clj -M:nrepl
+  :nrepl {:extra-deps {cider/cider-nrepl {:mvn/version "0.30.0"}}
+          :main-opts ["-m" "nrepl.cmdline" "--middleware" "[cider.nrepl/cider-middleware]"]}}}

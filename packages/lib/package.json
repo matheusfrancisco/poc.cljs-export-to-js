@@ -1,0 +1,8 @@
+{
+  "name": "cljs-js-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cljs_poc.core.js",
+  "keywords": ["clojurescript", "cljs", "shadow-cljs"],
+  "author": "matheusfrancisco"
+}

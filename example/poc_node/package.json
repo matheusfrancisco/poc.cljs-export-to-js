@@ -1,0 +1,10 @@
+{
+  "name": "poc_node",
+  "sideEffects": false,
+  "version": "0.0.1",
+  "scripts" : {
+  },
+  "dependencies": {
+    "poc": "../../packages/lib"
+  }
+}

@@ -1,0 +1,13 @@
+.cpcache
+node_modules
+.shadow-cljs
+
+example/poc/node_modules
+
+packages/lib/cljs.core.js
+packages/lib/cljs.core.js.map
+packages/lib/cljs.core.min.js
+packages/lib/cljs.core.min.js.map
+packages/lib/cljs_env.js
+packages/lib/cljs_env.js.map
+packages/lib/cljs_poc.core.js

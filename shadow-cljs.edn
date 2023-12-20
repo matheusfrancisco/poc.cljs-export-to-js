@@ -1,0 +1,20 @@
+{:deps {:aliases [:cljs]}
+ :builds
+ {:node
+  {:js-options {;; don't bundle any npm libs
+                :js-provider :import}
+   :compiler-options {:infer-externs :auto}
+   :target :npm-module
+   :runtime :node
+   :devtools {:enabled false}
+   :output-dir "packages/lib"
+   :entries [cljs-poc.core]}
+  :browser
+  {:js-options {;; don't bundle any npm libs
+                :js-provider :import}
+   :compiler-options {:infer-externs :auto}
+   :target :esm
+   :runtime :browser
+   :devtools {:enabled false}
+   :output-dir "packages/broswer"
+   :modules {:core {:entries [cljs-poc.core]}}}}}
