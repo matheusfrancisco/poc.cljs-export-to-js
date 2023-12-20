@@ -13,8 +13,8 @@
   {:js-options {;; don't bundle any npm libs
                 :js-provider :import}
    :compiler-options {:infer-externs :auto}
-   :target :esm
-   :runtime :browser
+   :target :browser
+   :runtime :esm
    :devtools {:enabled false}
    :output-dir "packages/broswer"
    :modules {:core {:entries [cljs-poc.core]}}}}}
