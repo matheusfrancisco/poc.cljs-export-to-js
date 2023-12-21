@@ -5,4 +5,7 @@ node_modules
 .lsp/.cache
 
 example/poc/node_modules
+packages/js
+packages/lib
+packages/broswer
 

@@ -3,7 +3,7 @@
   "type": "module",
   "sideEffects": false,
   "version": "0.4.85",
-  "scripts" : {
+  "scripts": {
     "release-node": "npx shadow-cljs release node",
     "release-browser": "npx shadow-cljs release browser"
   },
@@ -23,7 +23,8 @@
     "react-dom": "^18.2.0",
     "shadow-cljs": "^2.19.8",
     "squint-cljs": ".",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
     "chokidar": "^3.5.3"

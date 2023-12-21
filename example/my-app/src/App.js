@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-const {hello} = require("poc/cljs_poc.core")
+import {hello} from "poc/core"
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {hello("a")}
+          {hello("build cljs")}
         </a>
       </header>
     </div>

@@ -10,11 +10,6 @@
    :output-dir "packages/lib"
    :entries [cljs-poc.core]}
   :browser
-  {:js-options {;; don't bundle any npm libs
-                :js-provider :import}
-   :compiler-options {:infer-externs :auto}
-   :target :browser
-   :runtime :esm
-   :devtools {:enabled false}
-   :output-dir "packages/broswer"
-   :modules {:core {:entries [cljs-poc.core]}}}}}
+  {:target :esm
+   :output-dir "packages/js"
+   :modules {:core {:exports {hello cljs-poc.core/hello}}}}}}
